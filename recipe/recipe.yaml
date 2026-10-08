@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 3.1.2
+  version: 3.3.0
   python_min: '3.11'
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/graphrag-cache/graphrag_cache-${{ version }}.tar.gz
-  sha256: 40dc0ce40028d1194e59ce32df4856b35b8c1e1ef1d508210ed8aaae67afb719
+  sha256: 35f9c2ddabf96cb9366bbf9a301242a09be4079127f6419e1a8ae20b0bf911a1
 
 build:
   number: 0
@@ -24,8 +24,8 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }},<3.14
-    - graphrag-common ==3.1.2
-    - graphrag-storage ==3.1.2
+    - graphrag-common ==3.3.0
+    - graphrag-storage ==3.3.0
 tests:
   - python:
       imports:
